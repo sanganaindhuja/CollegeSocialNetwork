@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+
+    <h3> Create Faculty</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+          <div class="form-group">
+            <label for="name">First Name</label>
+            <input type="text" class="form-control" id="firstName" autocomplete="off"
+            [(ngModel)] = "faculty.firstName" name="firstName">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Last Name</label>
+            <input type="text" class="form-control" id="lastName"  autocomplete="off"
+            [(ngModel)] = "faculty.lastName"   name="lastName">
+          </div>
+      
+          <div class="form-group">
+            <label for="name">Email Id</label>
+            <input type="text" class="form-control" id="emailId"  autocomplete="off"
+            [(ngModel)] ="faculty.emailId"   name="emailId">
+          </div>
+      <br/>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+     
+      
+      
+    
+        <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+      </div>
+     
+      
+      

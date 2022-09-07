@@ -1,0 +1,26 @@
+
+<h3>show all students</h3>
+<table class="table table-bordered">
+<thead>
+  <tr>
+    <th width=200>Id</th>
+    <th width=200>Name</th>
+    <th width=200>marks</th>
+    <th width=200>Department</th>
+    <th width=200>Actions</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let student of students; let i=index">
+    <td>{{student.id}}</td> 
+    <td>{{student.name}}</td>
+    <td>{{student.marks}}</td>
+    <td>{{student.department}}</td>
+    <td>
+        <!-- <a class="btn btn-success" (click)="editStudent(i)">Edit</a> -->
+        <a class="btn btn-danger" (click)="deleteStudent(i)">Delete</a>
+    </td>
+  </tr>
+
+</tbody>
+</table>
